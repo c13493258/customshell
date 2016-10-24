@@ -42,6 +42,19 @@ class commands(Cmd):
         print(str(uid) + "," + str(gid) + "," + username + "," + gname + str(inodetable))
 
 
+
+    def help_ud(self):
+        print("display user information")
+
+    def help_pw(self):
+        print("print the current directory")
+    def help_quit(self):
+        print("Exits the shell")
+    def help_ifc(self):
+        print("prints information for network devices. defaults to eht0")
+    def help_dt(self):
+        print("prints time and date in YYYYMMDDhhmmss format")
+
 shell = commands()
 shell.prompt = '>'
 shell.cmdloop('starting shell')
