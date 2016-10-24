@@ -1,0 +1,13 @@
+Install instructions 
+
+first you have to be in root to install the shell . This is done by eentering sudo su . 
+You will be prompted to enter your password .
+After entering your password type cd / to change to your root directory
+enter git clone https://github.com/c13493258/customshell.git
+Thee shell is now installed 
+
+To make a new user that uses this shell enter useradd -ms /customshell/shell.py (username) 
+After making the new user type passwd (username) . You will be prompted to type in a username for this user .
+
+To change the shell for existing users the usermod command is used .
+type usermod -s /customshell/shell.py (username) .   
